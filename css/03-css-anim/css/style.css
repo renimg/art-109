@@ -1,0 +1,94 @@
+.title{
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ text-align: center;
+ margin: 5rem auto;
+ animation: skew 8s infinite;
+}
+
+body{
+    animation: change-color 20s infinite alternate;
+}
+
+@keyframes change-color{
+    0% {background-color: red;}
+    14% {background-color: orange;}
+    28% {background-color: yellow;}
+    42% {background-color: green;}
+    56% {background-color: blue;}
+    70% {background-color: indigo;}
+    84% {background-color: violet;}
+    100% {background-color: red;}
+}
+
+@keyframes skew{
+0%{transform:skew(0deg, 0deg) scaleX(0.8);}
+25%{transform:skew(30deg, 45deg) scaleX(1.25);}
+50%{transform:scaleX(1)}
+75%{transform:skew(-30deg, -45deg)scaleX(1.25);}
+100%{transform: skew(0deg, 0deg) scaleX(0.8);}
+}
+
+.square{
+    background-color: violet;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1.5rem;
+    margin: 3rem auto;
+    transition:all 2s;
+}
+
+.square:hover{
+    background-color: purple;
+    transform:rotate(360deg);
+}
+
+.square2{
+    background-color: purple;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1.5rem;
+    margin: 3rem auto;
+    transition:all 1s;
+}
+
+.square2:hover{
+    background-color: violet;
+    transform:skew(-30deg,10deg);
+}
+.button-div{
+text-align: center;
+}
+
+.button{
+    color:cornsilk;
+    background-color: blueviolet;
+    padding:1rem;
+    border-radius: 1rem;
+    margin:auto;
+    text-decoration: none;
+    display:inline-block;
+    transition:all 1s;
+}
+
+.button:hover{
+    background-color: purple;
+    
+    transform:scale(2);
+    display:inline-block;
+    padding:auto;
+}
+
+.button2{
+        color:cornsilk;
+    background-color: blueviolet;
+    padding:1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    display:inline-block;
+    margin:2rem;
+    transition:all 1s
+}
+.button2:hover{
+    background-color: transparent;
+    transform:scale(0.1)
+}

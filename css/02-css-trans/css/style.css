@@ -1,0 +1,35 @@
+.title{
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.square{
+    background-color: violet;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1.5rem;
+    margin: 3rem auto;
+    transition:all 2s;
+}
+
+.square:hover{
+    background-color: blueviolet;
+    transform:rotate(360deg);
+}
+.button-div{
+text-align: center;
+}
+
+.button{
+    color:cornsilk;
+    background-color: blueviolet;
+    padding:1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    display:inline-block;
+    transition:all 1s;
+}
+
+.button:hover{
+    background-color: purple;
+    transform:scale(2)
+}
