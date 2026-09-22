@@ -1,0 +1,67 @@
+/*
+CSS RESETS
+*/
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Respect user font settings */
+html {
+  font-size: 100%;
+}
+
+
+/* CSS */
+header h1{
+  font-size: 5rem;
+  color: red;
+  margin:3rem;
+  padding-bottom: 10rem;
+}
+body{
+  /* background: url("../images/eye.gif");
+  background-repeat: repeat;*/
+  background-color: rgb(0, 0, 0);
+}
+
+
+.eye{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/eye.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  transition:all 0.2s
+}
+
+.eye:hover{
+  background-image: url("../images/eye.gif");
+  background-repeat: repeat;
+  width: 400px;
+  transform:scale(3);
+  animation: move-eyes 0.3s infinite alternate;
+  transition:all 0.2s
+}
+@keyframes move-eyes {
+  0%{transform:scale(3) translate(-2rem,0);}
+  25%{transform:scale(3.8) translate(0,-2rem);}
+  50%{transform:scale(2.5) translate(2rem,0);}
+  75%{transform:scale(3.5) translate(0,2rem);}
+  100%{transform:scale(3) translate(-2rem,0)}
+
+  
+}
