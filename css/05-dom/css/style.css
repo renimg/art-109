@@ -1,0 +1,63 @@
+/* Color Themes */
+
+:root{
+    --bg:#f6e8ea;
+    --text:#0d0a0b;
+    --accent1:#dc6acf;
+    --accent2:#745c97;
+    --accent3:#6200b3;
+}
+
+body.dark{
+    --bg: #0d0a0b;
+    --text: #f6e8ea;
+}
+
+/* End Color Theme */
+/*
+CSS RESETS
+*/
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Respect user font settings */
+html {
+  font-size: 100%;
+}
+/* Make images responsive */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* End Resets */
+/* General CSS */
+
+body{
+    color:var(--text);
+    background-color: var(--bg);
+}
+
+header{
+    padding: 4rem;
+}
+
+main{
+    max-width: 15rem;
+    margin:0 auto;
+}
+main img{
+    width:10rem;
+}
+
+.hidden{
+    display:none;
+}
