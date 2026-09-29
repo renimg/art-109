@@ -71,9 +71,14 @@ header h1 {
     -webkit-text-stroke: 0.5rem var(--OutlineColor);
     margin: 1rem;
     font-size: 1.5rem;
-    text-shadow: var(--OutlineColor) 0px 0px 0.2rem, var(--OutlineColor) 0px 0px 0.4rem, var(--OutlineColor) 0px 0px 0.6rem, #FF2D95 0px 0px 0.8rem, #FF2D95 0px 0px 1rem, #FF2D95 0px 0px 1.2rem, #FF2D95 0px 0px 1.4rem, #FF2D95 0px 0px 1.6rem;
+    /* text-shadow: var(--OutlineColor) 0px 0px 0.2rem, var(--OutlineColor) 0px 0px 0.4rem, var(--OutlineColor) 0px 0px 0.6rem, #FF2D95 0px 0px 0.8rem, #FF2D95 0px 0px 1rem, #FF2D95 0px 0px 1.2rem, #FF2D95 0px 0px 1.4rem, #FF2D95 0px 0px 1.6rem; */
 }
-
+#name-change-jor{
+    color:lightblue;
+}
+#name-change-kim{
+    color:violet;
+}
 @media (max-width:1550px) {
     header h1 {
         font-size: 1.5rem;
@@ -273,6 +278,11 @@ nav .box.active{
     background-color: var(--BG2);
 }
 
+.about-content p {
+    margin:0 8.5rem;
+        line-height: 2rem;
+}
+
 .about-content img {
     max-width: 6.25%;
     padding-right: 1.2rem;
@@ -456,4 +466,14 @@ footer img {
 .flex-item-grid {
     justify-content: space-between;
     flex: 1 1 22rem;
+}
+
+.flex-item-grid2 {
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 1 19rem;
+}
+
+.hidden{
+    display:none;
 }
