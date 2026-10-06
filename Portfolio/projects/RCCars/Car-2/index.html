@@ -12,6 +12,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/baguetteBox.css">
 </head>
 
 <body>
@@ -27,7 +28,8 @@
             </div>
         </nav>
         <h1>
-            <a href="../../../"><img src="../../../img/snowflakelogo.png" alt="Snowflake on a circle background"> Jordan / Kimberly Smith</a>
+            <a href="../../../"><img src="../../../img/snowflakelogo.webp" alt="Snowflake on a circle background">
+                Jordan / Kimberly Smith</a>
             <div class="sizechange">(He/She/They)</div>
         </h1>
     </header>
@@ -37,11 +39,15 @@
                 <h2>Flowery-Drive</h2>
                 <div class="flex-container-grid">
                     <div class="project-item flex-item-grid">
-                        <img src="../../../img/sadan1.png" alt="3D modeled sadan at a front-left angle">
-                        <img src="../../../img/sadan2.png" alt="3D modeled golden crown at a back-right angle">
+                        <a href="../../../img/sadan1.webp"><img src="../../../img/sadan1.webp"
+                                alt="3D modeled sadan at a front-left angle"></a>
+                        <a href="../../../img/sadan2.webp"><img src="../../../img/sadan2.webp"
+                                alt="3D modeled sadan at a back-right angle"></a>
                         <p>
-                            Created for future use in my personal game development project internally called "HI//VOLTAGE", an RC Car racing game heavily inspired by Yu-Gi-Oh. <br>
-                            Flowery-Drive (Placeholder Name) is inspired by a weapon skin I also created for the game Team Fortress 2 called "Sakura Striped" <br>
+                            Created for future use in my personal game development project internally called
+                            "HI//VOLTAGE", an RC Car racing game heavily inspired by Yu-Gi-Oh. <br>
+                            Flowery-Drive (Placeholder Name) is inspired by a weapon skin I also created for the game
+                            Team Fortress 2 called "Sakura Striped" <br>
                             I also was inspired by the rough shape of my husband's car. <br>
                             Created using Blender and Adobe's Substance Painter
                         </p>
@@ -71,6 +77,12 @@
     </footer>
     <script src="../../../js/nav.js"></script>
     <script src="../../../js/main.js"></script>
+    <script src="../../../js/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run(".flex-container-grid", {
+            captions: true
+        })
+    </script>
 </body>
 
 </html>

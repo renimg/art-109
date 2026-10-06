@@ -3,15 +3,19 @@
 :root {
     --HeaderColor1: #ae78ff;
     --HeaderColor2: #e1a3ff;
+    --HeaderColor1hover: #c69cff;
+    --HeaderColor2hover: #eabfff;
     --TextColor1: #f6f4fb;
     --TextColor2: #ded5ff;
     --OutlineColor: #1e2264;
+    --OutlineColorhover: #3036a0;
     --BG1: #fe87b5;
     --BG2: #ffd2d17e;
     --BG3: #ffd2d1;
     --bgGradient: linear-gradient(0deg, var(--HeaderColor1) 50%, var(--HeaderColor2) 50%);
     --bgGradient2: linear-gradient(45deg, var(--HeaderColor1) 50%, var(--HeaderColor2) 50%);
-    --bgGradient3: linear-gradient(3deg, var(--BG1) 50%, var(--BG3) 50%);
+    --bgGradient2hover: linear-gradient(45deg, var(--HeaderColor1hover) 50%, var(--HeaderColor2hover) 50%);
+    --bgGradient3: linear-gradient(45deg, var(--BG1) 50%, var(--BG3) 50%);
 }
 
 
@@ -31,7 +35,6 @@ html {
 
 img {
     max-width: 100%;
-    margin: 0 auto;
 }
 
 /* general CSS */
@@ -42,9 +45,10 @@ a {
 }
 
 /* ---------------------- Header ----------------------  */
-html{
-        scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
+
 header {
     padding: 3rem;
     margin-bottom: 3rem;
@@ -59,9 +63,6 @@ header h1 {
     color: var(--TextColor1);
     /* -webkit-background-clip: text;
     background-clip: text; */
-    display: flex;
-    flex-direction:column;
-    align-items: center;
     /* -webkit-text-stroke: 0.75rem var(--OutlineColor);
     -webkit-text-stroke-color: var(--OutlineColor); */
 }
@@ -71,26 +72,33 @@ header h1 {
     -webkit-text-stroke: 0.5rem var(--OutlineColor);
     margin: 1rem;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* text-shadow: var(--OutlineColor) 0px 0px 0.2rem, var(--OutlineColor) 0px 0px 0.4rem, var(--OutlineColor) 0px 0px 0.6rem, #FF2D95 0px 0px 0.8rem, #FF2D95 0px 0px 1rem, #FF2D95 0px 0px 1.2rem, #FF2D95 0px 0px 1.4rem, #FF2D95 0px 0px 1.6rem; */
 }
-#name-change-jor{
-    color:lightblue;
-    cursor: pointer;
-}
-#name-change-kim{
-    color:violet;
-    cursor: pointer;
-}
+
 header h1 a {
-        display: flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: var(--TextColor1);
     -webkit-text-stroke: 0.5rem var(--OutlineColor);
 }
-header h1 a:hover{
-    color:var(--TextColor2)
+
+#name-change-jor{
+    color:lightblue;
+    cursor:pointer;
+}
+#name-change-kim{
+    color:violet;
+    cursor:pointer;
+}
+
+header h1 a:hover {
+    color: var(--TextColor2)
 }
 
 @media (max-width:1550px) {
@@ -126,7 +134,7 @@ header h1 a:hover{
 header h1 img {
     max-width: 6.25%;
     padding-right: 1.2rem;
-    margin: 0;
+    padding-bottom: 1.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -246,7 +254,7 @@ nav a:hover {
 }
 
 .hamburger {
-    display:none;
+    display: none;
     font-size: 3rem;
     background: none;
     border: none;
@@ -261,25 +269,29 @@ nav a:hover {
     justify-items: center;
 }
 
-@media(max-width:1230px){
-nav .box{
-    background-image:none;
-    border: transparent;
-}
-.nav-menu{
-    display: none;
-}
-.hamburger{
-    display:block;
-}
-.nav-menu.active{
-    display: block;
-}
-nav .box.active{
-    transition: none;
-    background-image: var(--bgGradient3);
-    border: var(--OutlineColor) 0.25rem solid;
-}
+@media(max-width:1230px) {
+    nav .box {
+        background-image: none;
+        border: transparent;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    nav .box.active {
+        transition: none;
+        background-image: var(--bgGradient3);
+        border: var(--OutlineColor) 0.25rem solid;
+    }
 }
 
 /* ---------------------- End Nav ----------------------  */
@@ -294,8 +306,20 @@ nav .box.active{
 }
 
 .about-content p {
-    margin:0 8.5rem;
-        line-height: 2rem;
+    margin: 0 7rem;
+    line-height: 2rem;
+}
+
+@media (max-width: 900px) {
+    .about-content p {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-content p {
+        margin: 0 3rem;
+    }
 }
 
 .about-content img {
@@ -362,6 +386,7 @@ nav .box.active{
     font-size: 2.25rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 2rem 0;
 }
 
@@ -400,12 +425,18 @@ nav .box.active{
 /* ---------------------- Portfolio Img ----------------------  */
 
 .portfolio-item {
+    opacity: 1;
     background: var(--bgGradient2);
     border: var(--OutlineColor) 0.25rem solid;
     font-size: 1rem;
     padding: 1rem;
     margin-bottom: 1.25rem;
     border-radius: 1rem;
+}
+
+.portfolio-item:hover {
+    background: var(--bgGradient2hover);
+        border: var(--OutlineColorhover) 0.25rem solid;
 }
 
 .project-item {
@@ -417,6 +448,7 @@ nav .box.active{
     border-radius: 1rem;
     line-height: 2rem;
 }
+
 .project-item img {
     display: inline;
     max-width: 49%;
@@ -424,7 +456,7 @@ nav .box.active{
 
 @media (max-width: 902px) {
     .project-item img {
-        display:flex;
+        display: flex;
     }
 }
 
@@ -522,6 +554,6 @@ footer img {
     flex: 1 1 19rem;
 }
 
-.hidden{
-    display:none;
+.hidden {
+    display: none;
 }

@@ -1,4 +1,5 @@
-portfoli.<!DOCTYPE html>
+portfoli.
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,6 +13,7 @@ portfoli.<!DOCTYPE html>
         rel="stylesheet">
 
     <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/baguetteBox.css">
 </head>
 
 <body>
@@ -27,7 +29,8 @@ portfoli.<!DOCTYPE html>
             </div>
         </nav>
         <h1>
-            <a href="../../../"><img src="../../../img/snowflakelogo.png" alt="Snowflake on a circle background"> Jordan / Kimberly Smith</a>
+            <a href="../../../"><img src="../../../img/snowflakelogo.webp" alt="Snowflake on a circle background">
+                Jordan / Kimberly Smith</a>
             <div class="sizechange">(He/She/They)</div>
         </h1>
     </header>
@@ -37,12 +40,16 @@ portfoli.<!DOCTYPE html>
                 <h2>Go!Go! (Placeholder Name)</h2>
                 <div class="flex-container-grid">
                     <div class="project-item flex-item-grid">
-                        <img src="../../../img/vesp2.png" alt="3D modeled RC Vespa at a front-left angle">
-                        <img src="../../../img/vespangle1.png" alt="3D modeled RC Vespa at a back-right angle">
+                        <a href="../../../img/vesp2.webp"><img src="../../../img/vesp2.webp"
+                                alt="3D modeled RC Vespa at a front-left angle"></a>
+                        <a href="../../../img/vespangle1.webp"><img src="../../../img/vespangle1.webp"
+                                alt="3D modeled RC Vespa at a back-right angle"></a>
                         <p>
-                            Created for future use in my personal game development project internally called "HI//VOLTAGE", an RC Car racing game heavily inspired by Yu-Gi-Oh. <br>
+                            Created for future use in my personal game development project internally called
+                            "HI//VOLTAGE", an RC Car racing game heavily inspired by Yu-Gi-Oh. <br>
                             Go!Go! (Placeholder Name) is inspired directly by the Vespa from the anime "FLCL".<br>
-                            Also made as an early test of motorcycle mechanics within unity before I put the project on the backburner while in college. <br>
+                            Also made as an early test of motorcycle mechanics within unity before I put the project on
+                            the backburner while in college. <br>
                             Created using Blender and Adobe's Substance Painter.
                         </p>
                     </div>
@@ -71,6 +78,12 @@ portfoli.<!DOCTYPE html>
     </footer>
     <script src="../../../js/nav.js"></script>
     <script src="../../../js/main.js"></script>
+    <script src="../../../js/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run(".flex-container-grid", {
+            captions: true
+        })
+    </script>
 </body>
 
 </html>
