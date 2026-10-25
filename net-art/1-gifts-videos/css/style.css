@@ -1,0 +1,38 @@
+.shocked-cat{
+    position:absolute;
+    top:200px;
+   left: 110px;
+}
+
+.my-cats{
+    position:relative;
+    margin: 50px auto;
+    max-width: 600px;
+    font-size: 3rem;
+}
+
+.huh-cat{
+    position:absolute;
+    top: 10px
+}
+
+body{
+    background-image: url(../media/884.GIF);
+    color: aliceblue;
+}
+
+.meow{
+    position:absolute;
+    top: 450px;
+    left: 1050px;
+}
+.meow2{
+    position:absolute;
+    top: 50px;
+    left: 750px;
+}
+.meow3{
+    position:absolute;
+    top: 50px;
+    left: 1250px;
+}
