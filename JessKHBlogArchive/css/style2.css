@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Respect user font settings */
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: black;
+    color: red;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-content {
+    margin: 1rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.box a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+.special-text {
+    text-align: center;
+    color:darkred;
+    position:fixed;
+    right:40px;
+    bottom:20px;
+    width:400px;
+}
+
+@media(max-width:465px){
+    .special-text{
+        right:35px;
+    }
+}
+@media(max-width:450px){
+    .special-text{
+        right:30px;
+    }
+}
+@media(max-width:435px){
+    .special-text{
+        right:22px;
+    }
+}
+@media(max-width:420px){
+    .special-text{
+        right:15px;
+    }
+}
