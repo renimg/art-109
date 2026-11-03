@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jessie's blog!!!!</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script>
+        if (localStorage.getItem('visitedGuestBook') !== "true"){
+            window.location.href = "../../../403/"
+        }
+    </script>
 </head>
-<link rel="stylesheet" href="../../../css/style.css">
 
 <body>
     <div class="sidenav">
@@ -16,17 +21,17 @@
             </button>
             <div class="dropdown-content">
                 <a href="../03-29-2007/" >03/29/2007</a>
-                <a href="#" style="color:red;">05/10/2007</a>
-                <a href="../10-06-2007/">10/06/2007</a>
-                <a href="../11-25-2007/">11/25/2007</a>
+                <a href="#" style="color:red;" id="locked">05/10/2007</a>
+                <a href="../10-06-2007/" id="locked2">10/06/2007</a>
+                <a href="../11-25-2007/" id="locked3">11/25/2007</a>
             </div>
         </div>
         <!-- <a href="#">about me</a> -->
         <a href="#">kingdom hearts news</a>
         <a href="#">blog</a>
         <a href="#">links and cool stuff</a>
-        <a href="../../../404/">sign my guestbook</a>
-        <a href="#">read my guestbook</a>
+        <a href="../../../404/" id="lost">sign my guestbook</a>
+        <a href="../../../guest-book/">read my guestbook</a>
         <img src="../../../img/chocobo.gif" alt="">
         <a href="../../../404/"><img src="../../../img/adopt.gif" alt=""></a>
         <div class="visitor">you are currently visitor number: <img src="../../../img/missing-1.png" alt="A meaningless number meant to make the girl feel happy." width="10%"></div>
@@ -75,10 +80,8 @@
             <b>OKAY GUYS XD</b> i saw my guestbook, ik i used too many parentheses in my about me XD i edited them out and wont use them again (...or will i? >:D) <br>
             i fixed up a few of my typos you guys pointed out T_T sorry orz ill do better next time i promise... 
         </p>
-
-
     </main>
-
+    <script src="../../../js/main.js"></script>
 </body>
 
 </html>

@@ -55,11 +55,16 @@ header {
     margin-left: 10%;
 }
 
-.center a {
+.center {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.t img{
+    display:block;
+    margin:0 auto;
 }
 
 main h1 {
@@ -97,7 +102,6 @@ main {
     text-align: right;
 }
 
-
 /* ----------testing stuff */
 .dropdown {
   float: center;
@@ -134,9 +138,38 @@ main {
   text-align: center;
   color:aqua;
 }
+
+#lost{
+    color:darkred;
+    text-decoration: line-through;
+}
+/* -------------------------------------------------------------locked stuff-------------------------------------------------------- */
+#locked {
+    color: #444;
+}
+#locked:hover{
+color:#999
+}
+
+#locked2 {
+    color: #444;
+}
+#locked2:hover{
+color:#999
+}
+
+#locked3 {
+    color: #444;
+}
+#locked3:hover{
+color:#999
+}
+/* -------------------------------------------------------------locked stuff-------------------------------------------------------- */
 .dropdown-content a:hover {
 color:red;
 }
+
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -149,4 +182,34 @@ color:red;
 }
 .visitor img {
     display: inline;
+}
+
+.guestbook{
+    /* display:inline; */
+max-width: 440px;
+font-size: 1rem;
+overflow-wrap: break-word;
+/* text-align: left; */
+margin: 0 0 1rem 0;
+}
+
+.guestbook-time{
+    width:50px; 
+    overflow-wrap:normal;
+}
+
+.guestbook-name{
+    display: inline;
+    font-weight: bold;
+    text-align: left;
+}
+
+.guestbook-item{
+    margin: 0.5rem 0;
+}
+.guestbook-comment{
+    margin: 2rem 0 0.5rem 0;
+}
+.guestbook img{
+    margin: 1rem 0 0 0;
 }
