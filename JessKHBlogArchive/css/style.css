@@ -62,9 +62,9 @@ header {
     align-items: center;
 }
 
-.t img{
-    display:block;
-    margin:0 auto;
+.t img {
+    display: block;
+    margin: 0 auto;
 }
 
 main h1 {
@@ -104,113 +104,128 @@ main {
 
 /* ----------testing stuff */
 .dropdown {
-  float: center;
-  overflow: hidden;
-  text-align: center;
-}
-.dropdown .dropbtn {
-  font-size: 1.3rem;
-  border: none;
-  outline: none;
-  color: aqua;
-  /* padding: 14px 16px; */
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-.navbar a:hover, .dropdown:hover .dropbtn {
-  color: red;
-}
-.dropdown-content {
-  display: none;
-  position: inline;
-  background-color: #222;
-  min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  z-index: 1;
-}
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  color:aqua;
+    float: center;
+    overflow: hidden;
+    text-align: center;
 }
 
-#lost{
-    color:darkred;
+.dropdown .dropbtn {
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    color: aqua;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: inline;
+    background-color: #222;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: aqua;
+}
+
+#lost {
+    color: darkred;
     text-decoration: line-through;
 }
+
 /* -------------------------------------------------------------locked stuff-------------------------------------------------------- */
 #locked {
     color: #444;
 }
-#locked:hover{
-color:#999
+
+#locked:hover {
+    color: #999
 }
 
 #locked2 {
     color: #444;
 }
-#locked2:hover{
-color:#999
+
+#locked2:hover {
+    color: #999
 }
 
 #locked3 {
     color: #444;
 }
-#locked3:hover{
-color:#999
+
+#locked3:hover {
+    color: #999
 }
+
 /* -------------------------------------------------------------locked stuff-------------------------------------------------------- */
 .dropdown-content a:hover {
-color:red;
+    color: red;
 }
 
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
-.visitor{
+.visitor {
     margin: 1rem;
- font-size: 0.8rem;
- font-family:Verdana, Geneva, Tahoma, sans-serif;
- text-align: center;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
+
 .visitor img {
     display: inline;
 }
 
-.guestbook{
+.guestbook {
     /* display:inline; */
-max-width: 440px;
-font-size: 1rem;
-overflow-wrap: break-word;
-/* text-align: left; */
-margin: 0 0 1rem 0;
+    max-width: 440px;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    /* text-align: left; */
+    margin: 0 0 1rem 0;
 }
 
-.guestbook-time{
-    width:50px; 
-    overflow-wrap:normal;
+.guestbook-time {
+    width: 50px;
+    overflow-wrap: normal;
 }
 
-.guestbook-name{
+.guestbook-name {
     display: inline;
     font-weight: bold;
     text-align: left;
 }
 
-.guestbook-item{
+.guestbook-item {
     margin: 0.5rem 0;
 }
-.guestbook-comment{
+
+.guestbook-comment {
     margin: 0.5rem 0 0.5rem 0;
 }
-.guestbook img{
+
+.guestbook img {
     margin: 1rem 0 0 0;
 }
 
@@ -221,17 +236,29 @@ margin: 0 0 1rem 0;
     margin-bottom: 3rem;
 }
 
-.blogtitle{
-    max-width:1200px;
+.smallimgs {
+    position: absolute;
+    vertical-align: bottom;
+    bottom:10px;
+    width: 100%;
+}
+
+.smallimgs img {
+    display: block;
+    margin: 0 auto;
+}
+.blogtitle {
+    max-width: 1200px;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     line-height: 2.5rem;
 }
 
-.blogcontents{
-font-size:1.2rem;
+.blogcontents {
+    font-size: 1.2rem;
 
 }
-.blogcontents img{
-    width: 2%;
+
+.blogcontents img {
+    /* width: 2%; */
 }
