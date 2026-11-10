@@ -145,12 +145,6 @@ main {
     text-align: center;
     color: aqua;
 }
-
-#lost {
-    color: darkred;
-    text-decoration: line-through;
-}
-
 /* -------------------------------------------------------------locked stuff-------------------------------------------------------- */
 #locked {
     color: #444;
@@ -239,7 +233,7 @@ main {
 .smallimgs {
     position: absolute;
     vertical-align: bottom;
-    bottom:10px;
+    bottom: 10px;
     width: 100%;
 }
 
@@ -247,6 +241,7 @@ main {
     display: block;
     margin: 0 auto;
 }
+
 .blogtitle {
     max-width: 1200px;
     font-size: 1.5rem;
@@ -259,6 +254,32 @@ main {
 
 }
 
-.blogcontents img {
-    /* width: 2%; */
+/* .blogcontents img {
+    width: 2%;
+} */
+
+.blogtitle i {
+    color: cornflowerblue;
+}
+
+.blogtitle {
+    color: aqua;
+}
+
+#lost {
+    color: darkred;
+    text-decoration: line-through;
+}
+
+#lost i {
+    color: darkred;
+    text-decoration: line-through;
+}
+
+.vids {
+    display:block;
+}
+
+.vids iframe {
+    max-width: 100%;
 }

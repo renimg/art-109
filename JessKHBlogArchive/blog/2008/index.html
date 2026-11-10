@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the blog!!!!</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <script>
+        if (localStorage.getItem('visitedAll07') !== "true") {
+            window.location.href = "../../403/"
+        }
+    </script>
 </head>
 
 <body>
@@ -19,9 +24,17 @@
                 <a href="../../about-me/2007/05-10-2007/" id="locked">05/10/2007</a>
             </div>
         </div>
-        <a href="#">kingdom hearts news</a>
-        <a href="#">blog</a>
-        <a href="#">links and cool stuff</a>
+        <a href="https://www.khinsider.com/news/">kingdom hearts news</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a href="blog/2007/">blog ▼</a>
+            </button>
+            <div class="dropdown-content">
+                <a href="../2007/">2007</a>
+                <a href="../2008/" id="locked2" style="color:red">2008</a>
+            </div>
+        </div>
+        <a href="../../links-and-cool-stuff/2007/08-09-2007/">links and cool stuff</a>
         <a href="../../404/" id="lost">sign my guestbook</a>
         <div class="dropdown">
             <button class="dropbtn">
@@ -329,6 +342,7 @@
         </div>
     </main>
     <script>
+        localStorage.setItem("visitedBlog08", "true")
     </script>
     <script src="../../js/main.js"></script>
 </body>
