@@ -61,9 +61,7 @@
 			{
 				"imports": {
 					"three": "../gameproj/build/three.module.js",
-					"three/addons/controls/": "../gameproj/",
-					"three/addons/loaders/": "../gameproj/jsm/loaders/",
-					"three/addons/math/": "../gameproj/jsm/math/"
+					"three/addons/": "../gameproj/jsm/"
 				}
 			}
 		</script>
@@ -72,8 +70,7 @@
 		<script type="module">
 
 			import * as THREE from 'three';
-
-			import { PointerLockControls } from 'three/addons/controls/PointerLockControls.js';
+			// import { PointerLockControls } from 'three/addons/controls/PointerLockControls.js';
 			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 			import { Octree } from 'three/addons/math/Octree.js';
 			import { Capsule } from 'three/addons/math/Capsule.js';
@@ -83,7 +80,6 @@
 			const objects = [];
 
 			let raycaster;
-
 
 			const collDistance = 0.5;
 			const worldOctree = new Octree();
